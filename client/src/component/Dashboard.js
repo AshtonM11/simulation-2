@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import House from "../House/House";
+import House from "./House";
 import { Link } from "react-router-dom";
 import axios from "axios";
 

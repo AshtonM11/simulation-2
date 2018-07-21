@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import React, { Component } from "react";
 import "./App.css";
 import Dashboard from "./component/Dashboard";
-import Wizard from "./component/Wizard";
+import Wizard from "./component/Wizard/Wizard";
 import Header from "./component/Header";
 import route from "./route";
 
