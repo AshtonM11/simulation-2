@@ -6,8 +6,10 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+
 app.use(bodyParser.json());
 app.use(cors());
+
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
     app.set("db", dbInstance);
@@ -15,7 +17,6 @@ massive(process.env.CONNECTION_STRING)
   .catch(err => console.log(err));
 
 app.post("/api/property", controller.create);
-
 app.get("/api/property", controller.get);
 
 const port = process.env.PORT || 4000;
